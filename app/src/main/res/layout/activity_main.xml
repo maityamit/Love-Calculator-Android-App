@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#FCFFFD"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Love Calculator ❤️"/>
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        app:neumorph_shapeType="basin"
+        android:layout_marginHorizontal="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:gravity="center"
+            android:hint="Enter your Name"
+            android:background="#DFF3FF"
+            android:textColor="#283593"
+            android:textSize="17sp"
+            android:id="@+id/edit_text_trip_name1"
+            android:inputType="textShortMessage"
+            android:textStyle="normal"
+            />
+    </soup.neumorphism.NeumorphCardView>
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        app:neumorph_shapeType="basin"
+        android:layout_marginHorizontal="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:gravity="center"
+            android:hint="Enter your Love one's Name"
+            android:background="#DFF3FF"
+            android:textColor="#283593"
+            android:textSize="17sp"
+            android:id="@+id/edit_text_trip_name2"
+            android:inputType="textShortMessage"
+            android:textStyle="normal"
+            />
+    </soup.neumorphism.NeumorphCardView>
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button"
+        android:text="Calculate"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:id="@+id/progress_circular"/>
+
+
+    <org.eazegraph.lib.charts.PieChart
+        android:id="@+id/piechart1"
+        android:visibility="gone"
+        android:layout_width="130dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_height="130dp"
+        android:padding="8dp"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12sp"
+        app:cardCornerRadius="5dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#FFE6DF">
+
+            <TextView
+                android:id="@+id/desc_goal_const"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_margin="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:text="Love comment"
+                android:textColor="#C62828" />
+
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>
